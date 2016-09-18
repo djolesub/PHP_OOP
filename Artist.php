@@ -8,7 +8,7 @@
  */
 class Artist{
     //Defining Constant
-    const EARLIEST_DATE = "Januar 1,1000";
+    const EARLIEST_DATE = "Januar 1,1200";
     //Defining fields
     private $name;
     private $lastName;
@@ -46,8 +46,8 @@ class Artist{
         return $this->deathDate;
     }
 
-    public function getEarliestAllowedDate(){
-        return date_creat(self::EARLIEST_DATE);
+    public function getEarliestAllowedDate () {
+        return date_create(self::EARLIEST_DATE);
     }
     //Defining static method for finding number of created artists
     public static function  getArtistsCount(){
@@ -79,12 +79,15 @@ class Artist{
         }
     }
 
-    public function setBirthDate($birthDate){
-        $date = date_create($birthDate);
-        if(!$date){
+    public function setBirthDate($birthdate) {
+// set variable only if passed a valid date string
+        $date = date_create($birthdate);
+        if ( ! $date ) {
             $this->birthDate = $this->getEarliestAllowedDate();
-        } else {
-            if ($date < $this->getEarliestAllowedDate()){
+        }
+        else {
+            // if very early date then change it to earliest allowed date
+            if ( $date < $this->getEarliestAllowedDate() ) {
                 $date = $this->getEarliestAllowedDate();
             }
             $this->birthDate = $date;
@@ -92,10 +95,10 @@ class Artist{
     }
 
     public function setDeathDate($birthDate){
-        $date = dateCreate($birthDate);
+        $date = date_create($birthDate);
         if (!$date){
             echo "Wrong input for death date";
-            return false
+            return false;
         } else {
             // set variable only if later than birth date
             if ($date > $this->getBirthDate()) {
@@ -114,11 +117,11 @@ class Artist{
 
     public function __toString(){
         $table = "";
-        $table.="<table><tr><th>Name</th><td>$this->name</td></tr>";
-        $table.="<table><tr><th> Last Name</th><td>$this->lastName</td></tr>";
-        $table.="<table><tr><th>Birth Date</th><td>$this->birthDate</td></tr>";
-        $table.="<table><tr><th>City Of Birth</th><td>$this->birthCity</td></tr>";
-        $table.="<table><tr><th>Death Day</th><td>$this->deathDate</td></tr>";
+        $table.="<table><tr><th>Name</th><td>{$this->name}</td></tr>";
+        $table.="<table><tr><th> Last Name</th><td>{$this->lastName}</td></tr>";
+        $table.="<table><tr><th>Birth Date</th><td>".date_format($this->birthDate,'d M Y')."</td></tr>";
+        $table.="<table><tr><th>Death Date</th><td>".date_format($this->deathDate,'d M Y')."</td></tr>";
+        $table.="<table><tr><th>City Of Birth</th><td>".$this->birthCity."</td></tr>";
         $table.="</table>";
         return $table;
 

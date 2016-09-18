@@ -8,13 +8,13 @@
 
 include_once "Artist.php";
 
-$artist1 = new Artist("Leonardo","Davinci","Firenca");
-$artist2 = new Artist("Milic","Vukasinovic","Bosna");
-echo $artist1->getName();
-echo $artist1->getLastName();
-echo $artist1->getbirthCity();
-echo "<hr>";
+$artist1 = new Artist("Pablo","Picasso","Malaga","Oct 25,1881","Apr 8,1973");
+$artist2= new Artist("Salvador","Dali","Figures","May 11,1904",
+    "January 23,1989");
+//Printing artists information
+//echo $artist1;
+
 echo $artist1;
 echo $artist2;
 echo "<hr>";
-echo Artist::getArtistsCount();
+echo date_format($artist1->getBirthDate(),'d M Y');
