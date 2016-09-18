@@ -21,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="testClasses.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testClasses.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testClasses.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="e#6#91#0#PHP" expanded="true" />
               </folding>
@@ -36,12 +36,9 @@
       <file leaf-file-name="Artist.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Artist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="125" column="22" selection-start-line="118" selection-start-column="7" selection-end-line="125" selection-end-column="22" />
-              <folding>
-                <marker date="1474214944853" expanded="true" signature="3458:3687" ph="..." />
-                <marker date="1474214944853" expanded="true" signature="3563:3651" ph="..." />
-              </folding>
+            <state relative-caret-position="1717">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,8 +46,8 @@
       <file leaf-file-name="Art.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Art.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+            <state relative-caret-position="221">
+              <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
               <folding>
                 <element signature="e#7#92#0#PHP" expanded="true" />
               </folding>
@@ -61,17 +58,17 @@
       <file leaf-file-name="Painting.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Painting.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="59" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="59" />
+            <state relative-caret-position="646">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sculpture.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sculpture.php">
+      <file leaf-file-name="ArtPrint.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ArtPrint.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="294">
               <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
               <folding />
             </state>
@@ -83,11 +80,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/testClasses.php" />
         <option value="$PROJECT_DIR$/Artist.php" />
+        <option value="$PROJECT_DIR$/Sculpture.php" />
+        <option value="$PROJECT_DIR$/ArtPrint.php" />
         <option value="$PROJECT_DIR$/Art.php" />
         <option value="$PROJECT_DIR$/Painting.php" />
-        <option value="$PROJECT_DIR$/Sculpture.php" />
+        <option value="$PROJECT_DIR$/testClasses.php" />
       </list>
     </option>
   </component>
@@ -209,15 +207,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474207060423</updated>
-      <workItem from="1474207064917" duration="11176000" />
+      <workItem from="1474207064917" duration="13521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11176000" />
+    <option name="totallyTimeSpent" value="13521000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1354009" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -255,31 +253,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testClasses.php">
+    <entry file="file://$PROJECT_DIR$/Sculpture.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#91#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="273">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ArtPrint.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Artist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="125" column="22" selection-start-line="118" selection-start-column="7" selection-end-line="125" selection-end-column="22" />
-          <folding>
-            <marker date="1474214944853" expanded="true" signature="3458:3687" ph="..." />
-            <marker date="1474214944853" expanded="true" signature="3563:3651" ph="..." />
-          </folding>
+        <state relative-caret-position="1717">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Art.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="221">
+          <caret line="25" column="67" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
           <folding>
             <element signature="e#7#92#0#PHP" expanded="true" />
           </folding>
@@ -288,17 +289,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Painting.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="646">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sculpture.php">
+    <entry file="file://$PROJECT_DIR$/testClasses.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="32" column="69" selection-start-line="32" selection-start-column="69" selection-end-line="32" selection-end-column="69" />
-          <folding />
+        <state relative-caret-position="260">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

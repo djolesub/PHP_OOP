@@ -6,14 +6,17 @@
  * Date: 9/18/2016
  * Time: 6:43 PM
  */
+include_once "Art.php";
+include_once "Artist.php";
+
 class Painting extends Art{
     //Defining fields
-    private $medium;
+    private$medium;
 
     //Defining Constructor
-    private function __construct($name,$artist,$yearCreated,$medium){
+    public function __construct($name,$artist,$yearCreated,$medium){
         parent::__construct($name,$artist,$yearCreated);
-        $this->setMedium();
+        $this->setMedium($medium);
     }
 
     //Definig getters
@@ -35,8 +38,6 @@ class Painting extends Art{
     }
 
 
-
-
-
-
 }
+
+

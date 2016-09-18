@@ -14,7 +14,7 @@ abstract class Art{
     private $yearCreated;
 
     //Defining Constructor
-    public function __constructor($name,$artist,$yearCreated){
+    public function __construct($name,$artist,$yearCreated){
         $this->name = $name;
         $this->artist = $artist;
         $this->yearCreated = $yearCreated;
