@@ -7,6 +7,8 @@
  * Time: 3:59 PM
  */
 class Artist{
+    //Defining Constant
+    const EARLIEST_DATE = "Januar 1,1000";
     //Defining fields
     private $name;
     private $lastName;
@@ -16,13 +18,13 @@ class Artist{
     protected static $allArtists = array();
     //Defining constructor
 
-    public function __construct($name,$lastName,$birthDate,$birthCity,$deathDate = null){
-        $this->name = setName($name);
-        $this->lastName = setLastName($lastName);
-        $this->birthData = setBirthDate($birthDate);
-        $this->birthCity = setBirthCity($birthCity);
-        $this->deathDate= setDeathDate($deathDate);
-        self::$allArtist[] = $this;
+    public function __construct($name,$lastName,$birthDate = null,$birthCity,$deathDate = null){
+        $this->setName($name);
+        $this->setLastName($lastName);
+        $this->setBirthDate($birthDate);
+        $this->setBirthCity($birthCity);
+        $this->setDeathDate($deathDate);
+        self::$allArtists[] = $this;
     }
 
     //Defining getters
@@ -43,6 +45,14 @@ class Artist{
     public function getDeathDate(){
         return $this->deathDate;
     }
+
+    public function getEarliestAllowedDate(){
+        return date_creat(self::EARLIEST_DATE);
+    }
+    //Defining static method for finding number of created artists
+    public static function  getArtistsCount(){
+        return count(self::$allArtists);
+}
 
     //Define setters
     public function setName($name){
@@ -70,11 +80,32 @@ class Artist{
     }
 
     public function setBirthDate($birthDate){
-
+        $date = date_create($birthDate);
+        if(!$date){
+            $this->birthDate = $this->getEarliestAllowedDate();
+        } else {
+            if ($date < $this->getEarliestAllowedDate()){
+                $date = $this->getEarliestAllowedDate();
+            }
+            $this->birthDate = $date;
+        }
     }
 
     public function setDeathDate($birthDate){
-
+        $date = dateCreate($birthDate);
+        if (!$date){
+            echo "Wrong input for death date";
+            return false
+        } else {
+            // set variable only if later than birth date
+            if ($date > $this->getBirthDate()) {
+                $this->deathDate = $date;
+            }
+            else {
+                echo "Death date is not valid";
+                return false;
+            }
+        }
     }
 
     //Defining magic methods
