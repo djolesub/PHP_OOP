@@ -10,7 +10,7 @@ class Truck extends Vehicle{
     private $cargoWeight;
 
     public function __construct($weight,$cargo){
-        $this->setWeight($weight);
+        parent::__construct($weight);
         $this->setCargoWeight($cargo);
     }
 
