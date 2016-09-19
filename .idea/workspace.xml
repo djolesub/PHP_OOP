@@ -21,11 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Vehicle.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Vehicle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Vehicle.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Truck.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Truck.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -60,6 +70,7 @@
         <option value="$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.2/Kanta.php" />
         <option value="$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Vozilo.php" />
         <option value="$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Vehicle.php" />
+        <option value="$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Truck.php" />
       </list>
     </option>
   </component>
@@ -248,12 +259,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474207060423</updated>
-      <workItem from="1474207064917" duration="24805000" />
+      <workItem from="1474207064917" duration="25502000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24805000" />
+    <option name="totallyTimeSpent" value="25502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -430,8 +441,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Vehicle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="51">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Laslo_Kraus_ETF/Chapter5_Inheritance/Exercise5.3/Truck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="40" column="75" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
           <folding />
         </state>
       </provider>

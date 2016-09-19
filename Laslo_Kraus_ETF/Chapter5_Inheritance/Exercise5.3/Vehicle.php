@@ -7,7 +7,7 @@
  * Time: 8:56 AM
  */
 abstract class Vehicle {
-    private $weight;
+    protected $weight;
 
     //Defining Constructor
     public function __construct($weight){
@@ -15,9 +15,7 @@ abstract class Vehicle {
     }
 
     //Weight getter
-    public function getWeight(){
-        return $this->weight;
-    }
+    public abstract function getWeight();
 
     //Weight setter
     public function setWeight($weight){
@@ -31,7 +29,7 @@ abstract class Vehicle {
     public function __toString(){
         return "Weight:\t$this->weight";
     }
-    public abstract function vrsta();
+    public abstract function type();
 
 
 
