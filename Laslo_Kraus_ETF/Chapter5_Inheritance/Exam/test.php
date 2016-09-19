@@ -16,6 +16,7 @@ $building1 = new Building("Cvijiceva 160");
 $residental1 = new Residential(1,5,150,"City",2000,2400);
 $residental2 = new Residential(10,8,350,"Urban",4000,4300);
 $buisnes1 = new Business(7,3,500,800,3,2,1);
+echo "<br> BUISNESSS PRICE" . $buisnes1->price();
 
 echo "<hr> Residental Class<hr>";
 echo $residental1->price();
@@ -43,3 +44,6 @@ foreach($a as $f){
 echo "<hr><hr>";
 $b = $building1->getMap();
 print_r($b);
+foreach($building1->getPlaces() as $place){
+    echo "<br>{$place->price()} <br>";
+}
